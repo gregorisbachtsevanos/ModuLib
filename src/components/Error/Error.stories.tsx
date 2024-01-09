@@ -1,5 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import Error, { ErrorProps } from "./Error";
+import StoryComponent from "../../stories/StoryComponent";
 
 const meta: Meta<ErrorProps> = {
   title: "Components/Error",
@@ -16,6 +17,10 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    children: <Error>Brand Name</Error>,
+    children: (
+      <StoryComponent>
+        <Error>Brand Name</Error>
+      </StoryComponent>
+    ),
   },
 };
