@@ -17,6 +17,10 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    children: "Brand Name ",
+    children: (
+      <StoryComponent>
+        <Error>Brand Name</Error>
+      </StoryComponent>
+    ),
   },
 };
