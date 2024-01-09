@@ -1,5 +1,7 @@
 import React, { InputHTMLAttributes, ReactNode } from "react";
+import { StyledCheckboxContainer } from "./Checkbox.styled";
 import { CheckboxFill, DashIcon } from "../../icons";
+import StoryComponent from "../../stories/StoryComponent";
 
 export interface CheckboxCustomProps {
   testId?: string;
@@ -20,28 +22,30 @@ const Checkbox: React.FC<CheckboxProps> = ({
   const { testId, id, ...rest } = props;
 
   return (
-    <div>
-      <input
-        type={shape === "rect" ? "checkbox" : "radio"}
-        id={id ?? String(label)}
-        data-testid={testId}
-        className={shape}
-        {...rest}
-      />
-      <label htmlFor={id ?? String(label)} className={shape}>
-        {label}
-      </label>
-      {shape === "rect" && !dashStyle && (
-        <div className="custom-check">
-          <CheckboxFill />
-        </div>
-      )}
-      {dashStyle && (
-        <div className="dash">
-          <DashIcon />
-        </div>
-      )}
-    </div>
+    <StoryComponent>
+      <StyledCheckboxContainer>
+        <input
+          type={shape === "rect" ? "checkbox" : "radio"}
+          id={id ?? String(label)}
+          data-testid={testId}
+          className={shape}
+          {...rest}
+        />
+        <label htmlFor={id ?? String(label)} className={shape}>
+          {label}
+        </label>
+        {shape === "rect" && !dashStyle && (
+          <div className="custom-check">
+            <CheckboxFill />
+          </div>
+        )}
+        {dashStyle && (
+          <div className="dash">
+            <DashIcon />
+          </div>
+        )}
+      </StyledCheckboxContainer>
+    </StoryComponent>
   );
 };
 export default Checkbox;
