@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const StyledErrorContainer = styled.div`
   width: 100%;
@@ -7,7 +7,6 @@ export const StyledErrorContainer = styled.div`
   .message {
     width: 100%;
     font-size: 0.75em;
-    color: ${({ theme }) => theme.palette.error};
     text-align: right;
   }
 `;
