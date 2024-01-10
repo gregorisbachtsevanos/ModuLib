@@ -7,9 +7,9 @@ export interface ErrorProps {
 
 const Label: React.FC<ErrorProps> = ({ children }) => {
   return (
-    <div>
+    <StyledErrorContainer>
       <p className="message">{children}</p>
-    </div>
+    </StyledErrorContainer>
   );
 };
 export default Label;
