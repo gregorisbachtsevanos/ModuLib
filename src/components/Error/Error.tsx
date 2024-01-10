@@ -5,11 +5,10 @@ export interface ErrorProps {
   children: ReactNode;
 }
 
-const Error: React.FC<ErrorProps> = ({ children }) => {
-  return (
-    <StyledErrorContainer>
-      <p className="message">{children}</p>
-    </StyledErrorContainer>
-  );
-};
+const Error: React.FC<ErrorProps> = ({ children }) => (
+  <div>
+    <p className="message">{children}</p>
+  </div>
+);
+
 export default Error;
