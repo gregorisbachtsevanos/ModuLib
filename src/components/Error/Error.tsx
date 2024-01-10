@@ -6,9 +6,9 @@ export interface ErrorProps {
 }
 
 const Error: React.FC<ErrorProps> = ({ children }) => (
-  <div>
+  <StyledErrorContainer>
     <p className="message">{children}</p>
-  </div>
+  </StyledErrorContainer>
 );
 
 export default Error;
