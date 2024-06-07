@@ -17,7 +17,7 @@ First, add ModuLib to your package.json dependencies:
 
 ```
 "dependencies": {
-  "modulib": "https://github.com/gregorisbachtsevanos/ModuLib/tree/master"
+  "modulib": "git+https://{ACCESS_KEY}@github.com/gregorisbachtsevanos/ModuLib.git"
 }
 ```
 
