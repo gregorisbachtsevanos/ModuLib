@@ -52,21 +52,8 @@ npm run storybook
 
 This will start the Storybook server, and you can view the components in your browser at http://localhost:6006.
 
-Contributing
-We welcome contributions to ModuLib. To contribute:
-
-- Fork the repository.
-- Create a new branch (git checkout -b feature/your-feature-name).
-- Commit your changes (git commit -m 'Add some feature').
-- Push to the branch (git push origin feature/your-feature-name).
-- Open a pull request.
-- Please make sure to follow the code style and include appropriate tests.
-
 License
 ModuLib is licensed under the MIT License. See the LICENSE file for more details.
 
 Support
 If you have any questions or need support, please open an issue on our GitHub repository.
-
-Contact
-For any inquiries, you can reach out to the maintainer at maintainer@example.com.
